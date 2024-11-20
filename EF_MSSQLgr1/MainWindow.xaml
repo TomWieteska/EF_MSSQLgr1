@@ -8,18 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <DataGrid x:Name="dgvUsers"
-                 >
+                  AutoGenerateColumns="False">
+                 
             <DataGrid.Columns>
                 <DataGridTextColumn
-                    
-                    Binding="{Binding Path=Id}" />
+                    Binding="{Binding Id}" />
                 <DataGridTextColumn
-                   
-                    Binding="{Binding Path=FirstName}" />
+                    Binding="{Binding FirsName}" />
                 <DataGridTextColumn
-                    
-                    Binding="{Binding Path=LasName}" />
-
+                    Binding="{Binding LastName}" />
             </DataGrid.Columns>
             
         </DataGrid>

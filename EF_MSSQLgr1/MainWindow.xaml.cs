@@ -41,7 +41,8 @@ namespace EF_MSSQLgr1
         {
             using(var context = new AppDBContext())
             {
-                usersList = new ObservableCollection<User>(context.Users.ToList());
+                usersList = 
+                    new ObservableCollection<User>(context.Users.ToList());
             }
         }
     }
